@@ -261,7 +261,7 @@
                 <input class="visually-hidden" type="file" name="user-photo">
               </label>
             </div>
-            <div class="photo-form__range-wrapper">
+            <fieldset class="photo-form__range">
               <label class="photo-form__icon photo-form__icon--crop" for="crop">
                 <span class="visually-hidden">Обрезка</span>
                 <svg width="44" height="44" focusable="false" aria-hidden="true">
@@ -283,13 +283,13 @@
                 </svg>
               </label>
               <input class="photo-form__scale" id="contrast" type="range" name="contrast" min="-50" max="50" step="1">
-            </div>
+            </fieldset>
             <div class="photo-form__buttons">
               <button class="photo-form__button button" type="submit">Запостить</button>
               <button class="photo-form__button button button-reset" type="reset">Отмена</button>
             </div>
           </div>
-        </photo-form>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
