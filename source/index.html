@@ -11,8 +11,316 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-
-
-
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header page-header--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg width="50" height="24" focusable="false" aria-hidden="true">
+            <use class="main-nav__toggle--open" xlink:href="#icon-menu-cross"></use>
+            <use class="main-nav__toggle--close" xlink:href="#icon-menu-burger"></use>
+          </svg>
+        </button>
+        <div class="main-nav__wrapper-logo">
+          <a class="main-nav__logo logo" aria-label="Логотип сайта PINK">
+            <svg width="75" height="23" focusable="false" aria-hidden="true">
+              <use class="logo__logo-mobile" xlink:href="#logo-pink-white-mobile"></use>
+              <use class="logo__logo-tablet" xlink:href="#logo-pink-white-tablet"></use>
+              <use class="logo__logo-desktop" xlink:href="#logo-pink-white-desktop"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="main-nav__list site-list pop-up">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Сайт для обработки фотографий PINK</h1>
+      <section class="application">
+        <h2 class="visually-hidden">Приложение для мобильных устройств PINK</h2>
+        <div class="application__wrapper">
+          <div class="application__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+              <img class="application__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="Рука с белым телефоном и открытым приложением PINK">
+            </picture>
+          </div>
+          <div class="application__text-wrapper">
+            <p class="application__intro pop-up">Взгляните на жизнь иначе!</p>
+            <a class="application__button button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+            <ul class="application__list">
+              <li class="application__list-item">
+                <a class="application__item-link" href="https://www.apple.com/ru/ios/app-store/">
+                  <span class="visually-hidden">Скачать приложение в AppStore</span>
+                </a>
+              </li>
+              <li class="application__list-item">
+                <a class="application__item-link" href="https://play.google.com/store/apps?hl=ru">
+                  <span class="visually-hidden">Скачать приложение в Google Play</span>
+                </a>
+              </li>
+              <li class="application__list-item">
+                <a class="application__item-link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+                  <span class="visually-hidden">Скачать приложение в Microsoft Store</span>
+                </a>
+              </li>
+            </ul>
+            <p class="aplication__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h2 class="visually-hidden">Преимущества сервиса</h2>
+          <p class="advantages__intro">
+            <span class="advantages__intro-item">Устали от серости мегаполиса?</span>
+            <span class="advantages__intro-item">Нам есть, что вам предложить!</span>
+          </p>
+          <ul class="advantages__list">
+            <li class="advantages__list-item">
+              <h3 class="advantages__list-item-title">Поднимает настроение</h3>
+              <p class="advantages__list-item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__list-item">
+              <h3 class="advantages__list-item-title">Меняет мир вокруг</h3>
+              <p class="advantages__list-item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__list-item">
+              <h3 class="advantages__list-item-title">Заводит новых друзей</h3>
+              <p class="advantages__list-item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <ul class="advantages__images-list">
+            <li class="advantages__image-item advantages__image-item--disabled">
+              <p class="advantages__image-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.webp 1x, img/iphone-screen-1-tablet@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.png 1x, img/iphone-screen-1-tablet@2x.png 2x">
+                  <img class="advantages__image" src="img/iphone-screen-1-tablet@1x.png" srcset="img/iphone-screen-1-tablet@2x.png 2x" width="157" height="320" alt="Экран смартфона с черно-белой фотографией мусорных баков">
+                </picture>
+              </p>
+            </li>
+            <li class="advantages__image-item advantages__image-item--disabled">
+              <p class="advantages__image-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.webp 1x, img/iphone-screen-2-tablet@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.png 1x, img/iphone-screen-2-tablet@2x.png 2x">
+                  <img class="advantages__image" src="img/iphone-screen-2-tablet@1x.png" srcset="img/iphone-screen-2-tablet@2x.png 2x" width="157" height="320" alt="Экран смартфона с розовой фотографией мусорных баков">
+                </picture>
+              </p>
+            </li>
+            <li class="advantages__image-item">
+              <p class="advantages__image-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                  <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height="320" alt="Экран смартфона с розовой фотографией мусорных баков и смайликом">
+                </picture>
+              </p>
+            </li>
+          </ul>
+          <div class="advantages__research research">
+            <div class="research__timer">
+              <span class="research__timer-data">24</span>
+            </div>
+            <div class="research__info">
+              <h3 class="research-title">Эффект на 24 часа!</h3>
+              <p class="research-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="research-link" href="#">Узнать больше об исследовании</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <div class="reviews__slider slider">
+          <button class="slider__button slider__button--left" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <div class="slider__slide slider__slide--1">
+            <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <b class="slider__text-author">Николай Петров</b>
+            <span class="slider__author-info">25 лет, водитель трамвая</span>
+          </div>
+          <button class="slider__button slider__button--right" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
+          <div class="slider__toggle toggle">
+            <button class="toggle__button toggle__button--checked">
+              <span class="visually-hidden">Первый слайд</span>
+            </button>
+            <button class="toggle__button">
+              <span class="visually-hidden">Второй слайд</span>
+            </button>
+            <button class="toggle__button">
+              <span class="visually-hidden">Третий слайд</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="pricing">
+        <h2 class="visually-hidden">Тарифные планы</h2>
+        <div class="pricing__wrapper">
+          <div class="pricing__table">
+            <div class="pricing__table-column">
+              <div class="pricing__table-item">
+                <span class="pricing__table-cell">Розовый фильтр</span>
+              </div>
+              <div class="pricing__table-item">
+                <span class="pricing__table-cell">Смайлики</span>
+              </div>
+              <div class="pricing__table-item">
+                <span class="pricing__table-cell">Комментарии</span>
+              </div>
+            </div>
+            <div class="pricing__table-column">
+              <div class="pricing__table-header">
+                <span class="pricing__name">База</span>
+                <span class="pricing__volume">1,99 usd</span>
+              </div>
+              <div class="pricing__table-item">
+                <span class="pricing__table-cell">Розовый фильтр</span>
+              </div>
+              <div class="pricing__table-item">
+                <span class="pricing__table-cell">Смайлики</span>
+              </div>
+              <div class="pricing__table-item">
+                <span class="pricing__table-cell">Комментарии</span>
+              </div>
+            </div>
+            <div class="pricing__table-column">
+              <div class="pricing__table-header">
+                <span class="pricing__name">Стандарт</span>
+                <span class="pricing__volume">3,99 usd</span>
+              </div>
+              <div class="pricing__table-item">
+                <span class="pricing__table-cell">Розовый фильтр</span>
+              </div>
+              <div class="pricing__table-item">
+                <span class="pricing__table-cell">Смайлики</span>
+              </div>
+              <div class="pricing__table-item">
+                <span class="pricing__table-cell">Комментарии</span>
+              </div>
+            </div>
+            <div class="pricing__table-column">
+              <div class="pricing__table-header">
+                <span class="pricing__name">Анлим</span>
+                <span class="pricing__volume">9,99 usd</span>
+              </div>
+              <div class="pricing__table-item">
+                <span class="pricing__table-cell">Розовый фильтр</span>
+              </div>
+              <div class="pricing__table-item">
+                <span class="pricing__table-cell">Смайлики</span>
+              </div>
+              <div class="pricing__table-item">
+                <span class="pricing__table-cell">Комментарии</span>
+              </div>
+            </div>
+          </div>
+          <div class="pricing__toggle toggle">
+            <button class="toggle__button toggle__button--checked">
+              <span class="visually-hidden">Первый слайд</span>
+            </button>
+            <button class="toggle__button">
+              <span class="visually-hidden">Второй слайд</span>
+            </button>
+            <button class="toggle__button">
+              <span class="visually-hidden">Третий слайд</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wrapper">
+          <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
+          <div class="contacts__blocks-wrapper">
+            <p class="contacts__phone-block">
+              <span class="contacts__text">Звоните:</span>
+              <a class="contacts__phone-link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </p>
+            <p class="contacts__email-block">
+              <span class="contacts__text">Пишите:</span>
+              <a class="contacts__email-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p class="contacts__address-block">
+              <span class="contacts__text">Приезжайте в гости:</span>
+              <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
+            </p>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="320" height="200" aria-label="Интерактивная карта с адресом: г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8"></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__logo-wrapper">
+        <a class="page-footer__logo" aria-label="Логотип сайта PINK">
+          <svg width="147" height="41" focusable="false" aria-hidden="true">
+            <use class="page-footer__logo-mobile" xlink:href="#logo-pink-blue-mobile"></use>
+            <use class="page-footer__logo-desktop" xlink:href="#logo-pink-blue-desktop"></use>
+          </svg>
+        </a>
+      </div>
+      <section class="page-footer__social social">
+        <h2 class="visually-hidden">Мы в соц-сетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Наш твиттер</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Наш фейсбук</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Наш ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Сайт HTML Academy</span>
+          <b class="copyright__text">Разработано</b>
+          <svg class="copyright__link-icon" width="27px" height="34px" focusable="false" aria-hidden="true">
+            <use xlink:href="#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <script src="js/picturefill.js"></script>
+    <script src="js/show-main-menu.js"></script>
   </body>
 </html>
