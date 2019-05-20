@@ -1,0 +1,52 @@
+.logo {
+  svg {
+    fill: #ffffff;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: #d22856;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: rgba(#ffffff, 0.3);
+    }
+  }
+}
+
+.logo__logo-tablet,
+.logo__logo-desktop {
+  display: none;
+}
+
+@media (min-width: $width-tablet) {
+  .logo {
+    svg {
+      width: 147px;
+      height: 40px;
+    }
+  }
+
+  .logo__logo-tablet {
+    display: block;
+  }
+
+  .logo__logo-mobile,
+  .logo__logo-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .logo__logo-desktop {
+    display: block;
+  }
+
+  .logo__logo-mobile,
+  .logo__logo-tablet {
+    display: none;
+  }
+}

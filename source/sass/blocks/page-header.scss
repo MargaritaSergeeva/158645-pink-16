@@ -1,0 +1,11 @@
+.page-header__wrapper {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: $width-desktop) {
+  .page-header {
+    background-color: rgba(#1d2631, 0.3);
+  }
+}
+
