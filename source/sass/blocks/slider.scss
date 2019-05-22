@@ -1,0 +1,29 @@
+.slider {
+  @include indent-mobile;
+}
+
+.slider__button {
+  display: none;
+}
+
+.slider__text-author {
+  display: block;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
+.slider__author-info {
+  display: none;
+}
+
+.slider__text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}

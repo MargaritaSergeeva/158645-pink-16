@@ -1,0 +1,141 @@
+@media (min-width: $width-tablet) {
+  .research {
+    background-color: #ffffff;
+  }
+
+  .research__wrapper {
+    @include indent-mobile;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: $width-tablet;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 59px;
+    padding-bottom: 30px;
+  }
+
+  .research__timer {
+    width: 238px;
+    height: 276px;
+    padding-top: 55px;
+    padding-left: 19px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .research__timer-data {
+    display: block;
+    width: 202px;
+    height: 202px;
+    padding-top: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 8px;
+
+    font-size: 96px;
+    line-height: 149.5px;
+    font-weight: 700;
+    color: #d22856;
+
+    border: 14px solid #d22856;
+    border-radius: 100%;
+  }
+
+  .research__info {
+    width: 310px;
+    padding-top: 37px;
+    padding-right: 10px;
+  }
+
+  .research-title {
+    margin: 0;
+    margin-bottom: 10px;
+    padding-right: 130px;
+
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .research-text {
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .research-link {
+    display: block;
+
+    font-size: 14px;
+    line-height: 24px;
+    color: #d22856;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .research {
+    background-color: transparent;
+  }
+
+  .research__wrapper {
+    @include indent;
+    width: $width-desktop;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .research__timer {
+    width: 298px;
+    height: 345px;
+    padding-top: 69px;
+    padding-left: 24px;
+  }
+
+  .research__timer-data {
+    width: 253px;
+    height: 253px;
+    padding-top: 8px;
+    padding-left: 38px;
+    padding-right: 30px;
+    padding-bottom: 8px;
+
+    font-size: 120px;
+    line-height: 187px;
+
+    border: 18px solid #d22856;
+  }
+
+  .research__info {
+    width: 574px;
+    padding-top: 91px;
+    padding-right: 40px;
+  }
+
+  .research-title {
+    margin-bottom: 21px;
+  }
+
+  .research-text {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .research-link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .research__wrapper {
+    padding-bottom: 67px;
+  }
+}
