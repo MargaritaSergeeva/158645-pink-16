@@ -1,3 +1,31 @@
 .reviews {
-  padding-top: 41px;
+  padding-top: 42px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: $width-tablet) {
+  .reviews {
+    padding-top: 69px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .reviews {
+    position: relative;
+    padding-top: 185px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 72px;
+      left: 443px;
+
+      width: 79px;
+      height: 64px;
+
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }
