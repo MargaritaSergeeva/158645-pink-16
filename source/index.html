@@ -53,34 +53,36 @@
     <main>
       <h1 class="visually-hidden">Сайт для обработки фотографий PINK</h1>
       <section class="application">
-        <h2 class="visually-hidden">Приложение для мобильных устройств PINK</h2>
         <div class="application__wrapper">
-          <div class="application__image-wrapper">
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
-              <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
-              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-              <img class="application__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="Рука с белым телефоном и открытым приложением PINK">
-            </picture>
+          <h2 class="visually-hidden">Приложение для мобильных устройств PINK</h2>
+          <div class="application__background">
+            <div class="application__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+                <img class="application__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="258" height="286" alt="Рука с белым телефоном и открытым приложением PINK">
+              </picture>
+            </div>
           </div>
           <div class="application__text-wrapper">
-            <p class="application__intro pop-up">Взгляните на жизнь иначе!</p>
+            <p class="application__intro">Взгляните на жизнь иначе!</p>
             <a class="application__button button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
             <ul class="application__list">
               <li class="application__list-item">
-                <a class="application__item-link" href="https://www.apple.com/ru/ios/app-store/">
+                <a class="application__item-link application__item-link--app" href="https://www.apple.com/ru/ios/app-store/">
                   <span class="visually-hidden">Скачать приложение в AppStore</span>
                 </a>
               </li>
               <li class="application__list-item">
-                <a class="application__item-link" href="https://play.google.com/store/apps?hl=ru">
+                <a class="application__item-link application__item-link--android" href="https://play.google.com/store/apps?hl=ru">
                   <span class="visually-hidden">Скачать приложение в Google Play</span>
                 </a>
               </li>
               <li class="application__list-item">
-                <a class="application__item-link" href="https://www.microsoft.com/ru-ru/store/apps/windows">
+                <a class="application__item-link application__item-link--win" href="https://www.microsoft.com/ru-ru/store/apps/windows">
                   <span class="visually-hidden">Скачать приложение в Microsoft Store</span>
                 </a>
               </li>

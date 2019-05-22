@@ -1,0 +1,45 @@
+.button {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: #d22856;
+
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(#d22856, 0.3) ;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .button {
+    padding-left: 44px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .button {
+    padding-top: 13px;
+    padding-left: 30px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
