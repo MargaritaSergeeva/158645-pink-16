@@ -115,6 +115,7 @@
   .main-nav {
     @include indent;
     display: flex;
+    flex-wrap: wrap;
     width: $width-desktop;
     margin-right: auto;
     margin-left: auto;

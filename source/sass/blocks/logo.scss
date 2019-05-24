@@ -3,16 +3,18 @@
     fill: #ffffff;
   }
 
-  &:hover,
-  &:focus {
-    svg {
-      fill: #d22856;
+  &[href] {
+    &:hover,
+    &:focus {
+      svg {
+        fill: #d22856;
+      }
     }
-  }
 
-  &:active {
-    svg {
-      fill: rgba(#ffffff, 0.3);
+    &:active {
+      svg {
+        fill: rgba(#ffffff, 0.3);
+      }
     }
   }
 }

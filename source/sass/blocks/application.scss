@@ -15,6 +15,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .application__image-wrapper {
@@ -94,6 +98,7 @@
 .aplication__description {
   font-size: 14px;
   line-height: 24px;
+  font-weight: 300;
   text-align: center;
   color: #ffffff;
 }
@@ -101,9 +106,12 @@
 @media (min-width: $width-tablet) {
   .application {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
+    background-size: 1200px auto;
     background-position: center;
-    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .application__wrapper {
@@ -116,12 +124,14 @@
     margin-left: auto;
     padding-top: 204px;
     padding-bottom: 92px;
+
+    overflow: hidden;
   }
 
   .application__background {
     position: absolute;
     top: 184px;
-    left: -1px;
+    left: -20px;
 
     padding: 0;
     background-color: transparent;
@@ -129,12 +139,12 @@
   }
 
   .application__image-wrapper {
-    width: auto;
+    width: 700px;
     margin: 0;
   }
 
   .application__image {
-    width: 660px;
+    width: 700px;
     height: 545px;
   }
 
@@ -143,7 +153,7 @@
     position: relative;
     z-index: 1;
 
-    width: 310px;
+    width: 300px;
     margin: 0;
     padding: 0;
   }
@@ -152,8 +162,8 @@
     display: block;
     margin: 0;
     margin-bottom: 30px;
-    padding-left: 48px;
-    padding-right: 56px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     font-size: 40px;
     line-height: 48px;
@@ -163,7 +173,6 @@
   }
 
   .application__button {
-    margin-right: 10px;
     margin-bottom: 44px;
   }
 
@@ -181,6 +190,12 @@
 @media (min-width: $width-desktop) {
   .application {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: 2560px auto;
+    background-position: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .application__wrapper {
@@ -188,22 +203,27 @@
     width: $width-desktop;
     padding-top: 221px;
     padding-bottom: 103px;
+    overflow: hidden;
   }
 
   .application__background {
     top: 209px;
-    left: 58px;
+    left: 26px;
+  }
+
+  .application__image-wrapper {
+    width: 1050px;
   }
 
   .application__image {
-    width: 888px;
+    width: 1050px;
     height: 645px;
   }
 
   .application__intro {
     margin-bottom: 52px;
-    padding-left: 33px;
-    padding-right: 40px;
+    padding-left: 34px;
+    padding-right: 34px;
 
     font-size: 50px;
     line-height: 59px;
