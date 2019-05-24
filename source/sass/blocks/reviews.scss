@@ -1,12 +1,12 @@
 .reviews {
   padding-top: 42px;
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 }
 
 @media (min-width: $width-tablet) {
   .reviews {
     padding-top: 69px;
-    padding-bottom: 40px;
+    padding-bottom: 21px;
   }
 }
 
@@ -14,6 +14,7 @@
   .reviews {
     position: relative;
     padding-top: 185px;
+    padding-bottom: 40px;
 
     &::before {
       content: "";

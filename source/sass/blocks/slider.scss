@@ -1,5 +1,7 @@
 .slider {
   @include indent-mobile;
+  display: flex;
+  flex-direction: column;
 }
 
 .slider__button {
@@ -66,7 +68,7 @@
   }
 }
 
-@media (min-width: $width-tablet) {
+@media (min-width: $width-desktop) {
   .slider {
     @include indent;
   }
