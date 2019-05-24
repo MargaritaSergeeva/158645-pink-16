@@ -1,0 +1,42 @@
+.gallery {
+  width: $width-mobile;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.gallery__photo {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $width-tablet) {
+  .gallery {
+    width: $width-tablet;
+  }
+
+  .gallery__wrapper {
+    @include indent-mobile;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: $width-tablet;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .gallery {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .gallery__wrapper {
+    @include indent;
+    width: $width-desktop;
+  }
+
+  .gallery__photo {
+    margin-bottom: 54px;
+  }
+}

@@ -60,7 +60,7 @@
       <section class="inner-page__gallery gallery">
         <h2 class="visually-hidden">Блок с фотографиями пользователей</h2>
         <article class="gallery__photo photo photo--panorama">
-          <div class="photo__image-wrapper photo__image-wrapper--panorama">
+          <a class="photo__image-link photo__image-link--panorama" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
@@ -69,25 +69,25 @@
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
               <img class="photo__image photo__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорамная фоторгафия висячего моста над лесом">
             </picture>
-          </div>
+          </a>
           <div class="photo__review-wrapper">
             <div class="photo__review-author">
               <b class="photo__author-name">Анна</b>
               <time class="photo__time" datetime="2019-05-18T18:18:18+04:00">(5 минут назад)</time>
             </div>
-            <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          </div>
-          <div class="photo__like-counter">
-            <button class="photo__like-button" type="button">
-              <span class="visually-hidden">Поставить лайк</span>
-            </button>
-            <span class="photo__like-text">Нравится:</span>
-            <span class="photo__like-sum">215</span>
+            <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="photo__like-counter">
+              <button class="photo__like-button" type="button">
+                <span class="visually-hidden">Поставить лайк</span>
+              </button>
+              <span class="photo__like-text">Нравится:&nbsp;</span>
+              <span class="photo__like-sum">215</span>
+            </div>
           </div>
         </article>
         <div class="gallery__wrapper">
-          <article class="gallery__photo photo">
-            <div class="photo__image-wrapper">
+          <article class="gallery__photo photo photo--first">
+            <a class="photo__image-link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
@@ -96,24 +96,24 @@
                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
                 <img class="photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Белая машина на сером фоне">
               </picture>
-            </div>
+            </a>
             <div class="photo__review-wrapper">
               <div class="photo__review-author">
                 <b class="photo__author-name">Левон</b>
                 <time class="photo__time" datetime="2019-05-18T18:18:18+04:00">(5 часов назад)</time>
               </div>
               <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            </div>
-            <div class="photo__like-counter">
-              <button class="photo__like-button" type="button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="photo__like-text">Нравится:</span>
-              <span class="photo__like-sum">356</span>
+              <div class="photo__like-counter">
+                <button class="photo__like-button" type="button">
+                  <span class="visually-hidden">Поставить лайк</span>
+                </button>
+                <span class="photo__like-text">Нравится:&nbsp;</span>
+                <span class="photo__like-sum">356</span>
+              </div>
             </div>
           </article>
           <article class="gallery__photo photo">
-            <div class="photo__image-wrapper">
+            <a class="photo__image-link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
@@ -122,24 +122,24 @@
                 <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
                 <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Барабанная установка">
               </picture>
-            </div>
+            </a>
             <div class="photo__review-wrapper">
               <div class="photo__review-author">
                 <b class="photo__author-name">Антон</b>
                 <time class="photo__time" datetime="2019-05-18T18:18:18+04:00">(12 часов назад)</time>
               </div>
               <p class="photo__text">Соседи будут рады!</p>
-            </div>
-            <div class="photo__like-counter">
-              <button class="photo__like-button" type="button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="photo__like-text">Нравится:</span>
-              <span class="photo__like-sum">666</span>
+              <div class="photo__like-counter">
+                <button class="photo__like-button" type="button">
+                  <span class="visually-hidden">Поставить лайк</span>
+                </button>
+                <span class="photo__like-text">Нравится:&nbsp;</span>
+                <span class="photo__like-sum">666</span>
+              </div>
             </div>
           </article>
           <article class="gallery__photo photo">
-            <div class="photo__image-wrapper">
+            <a class="photo__image-link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
@@ -148,24 +148,24 @@
                 <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                 <img class="photo__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Вид на небо через стеклянную крышу">
               </picture>
-            </div>
+            </a>
             <div class="photo__review-wrapper">
               <div class="photo__review-author">
                 <b class="photo__author-name">Борис</b>
                 <time class="photo__time" datetime="2019-05-18T18:18:18+04:00">(20 часов назад)</time>
               </div>
               <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            </div>
-            <div class="photo__like-counter">
-              <button class="photo__like-button" type="button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="photo__like-text">Нравится:</span>
-              <span class="photo__like-sum">215</span>
+              <div class="photo__like-counter">
+                <button class="photo__like-button" type="button">
+                  <span class="visually-hidden">Поставить лайк</span>
+                </button>
+                <span class="photo__like-text">Нравится:&nbsp;</span>
+                <span class="photo__like-sum">215</span>
+              </div>
             </div>
           </article>
           <article class="gallery__photo photo">
-            <div class="photo__image-wrapper">
+            <a class="photo__image-link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
@@ -174,24 +174,24 @@
                 <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
                 <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Рынок с арбузами под оранжевым тентом и надпись Кубанская бахча">
               </picture>
-            </div>
+            </a>
             <div class="photo__review-wrapper">
               <div class="photo__review-author">
                 <b class="photo__author-name">Сергей</b>
                 <time class="photo__time" datetime="2019-05-18T18:18:18+04:00">(25 часов назад)</time>
               </div>
               <p class="photo__text">Самая кубанская в мире!</p>
-            </div>
-            <div class="photo__like-counter">
-              <button class="photo__like-button" type="button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="photo__like-text">Нравится:</span>
-              <span class="photo__like-sum">4</span>
+              <div class="photo__like-counter">
+                <button class="photo__like-button" type="button">
+                  <span class="visually-hidden">Поставить лайк</span>
+                </button>
+                <span class="photo__like-text">Нравится:&nbsp;</span>
+                <span class="photo__like-sum">4</span>
+              </div>
             </div>
           </article>
           <article class="gallery__photo photo">
-            <div class="photo__image-wrapper">
+            <a class="photo__image-link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
@@ -200,24 +200,24 @@
                 <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
                 <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Ноги на фоне гористой местности">
               </picture>
-            </div>
+            </a>
             <div class="photo__review-wrapper">
               <div class="photo__review-author">
                 <b class="photo__author-name">Максим</b>
                 <time class="photo__time" datetime="2019-05-18T18:18:18+04:00">(40 часов назад)</time>
               </div>
               <p class="photo__text">Где снег-то?</p>
-            </div>
-            <div class="photo__like-counter">
-              <button class="photo__like-button" type="button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="photo__like-text">Нравится:</span>
-              <span class="photo__like-sum">150</span>
+              <div class="photo__like-counter">
+                <button class="photo__like-button" type="button">
+                  <span class="visually-hidden">Поставить лайк</span>
+                </button>
+                <span class="photo__like-text">Нравится:&nbsp;</span>
+                <span class="photo__like-sum">150</span>
+              </div>
             </div>
           </article>
           <article class="gallery__photo photo">
-            <div class="photo__image-wrapper">
+            <a class="photo__image-link" href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
@@ -226,20 +226,20 @@
                 <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
                 <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Крыло самолета в небе">
               </picture>
-            </div>
+            </a>
             <div class="photo__review-wrapper">
               <div class="photo__review-author">
                 <b class="photo__author-name">Надежда</b>
                 <time class="photo__time" datetime="2019-05-18T18:18:18+04:00">(45 часов назад)</time>
               </div>
               <p class="photo__text">Всем GM и взаимные лайки!</p>
-            </div>
-            <div class="photo__like-counter">
-              <button class="photo__like-button" type="button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="photo__like-text">Нравится:</span>
-              <span class="photo__like-sum">2563</span>
+              <div class="photo__like-counter">
+                <button class="photo__like-button" type="button">
+                  <span class="visually-hidden">Поставить лайк</span>
+                </button>
+                <span class="photo__like-text">Нравится:&nbsp;</span>
+                <span class="photo__like-sum">2563</span>
+              </div>
             </div>
           </article>
         </div>
