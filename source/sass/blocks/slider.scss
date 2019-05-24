@@ -87,7 +87,10 @@
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: 100%;
+    outline: none;
     opacity: 0.3;
+
+    cursor: pointer;
 
     &--left {
       background-image: url("../img/icon-review-arrow-left.svg");
@@ -97,6 +100,15 @@
     &--right {
       background-image: url("../img/icon-review-arrow-right.svg");
       margin-left: 104px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
     }
   }
 
