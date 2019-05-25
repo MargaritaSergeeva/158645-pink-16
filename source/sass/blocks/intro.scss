@@ -11,10 +11,23 @@
   padding-bottom: 13px;
 }
 
+.intro--form-page {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0;
+}
+
 .intro__text {
   margin: 0;
 
   font-size: 14px;
+  text-align: center;
+}
+
+.intro__extra {
+  display: none;
+  font-size: 14px;
+  line-height: 30px;
   text-align: center;
 }
 
@@ -30,7 +43,18 @@
     padding-bottom: 23px;
   }
 
+  .intro--form-page {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 25px;
+  }
+
   .intro__text {
+    font-size: 18px;
+  }
+
+  .intro__extra {
+    display: inline-block;
     font-size: 18px;
   }
 }
@@ -43,5 +67,11 @@
 
   .intro--photo-page {
     padding-bottom: 8px;
+  }
+
+  .intro--form-page {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 0;
   }
 }
