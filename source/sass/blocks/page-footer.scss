@@ -1,5 +1,46 @@
 .page-footer {
+  @include indent-mobile;
+  padding-top: 39px;
+  padding-bottom: 42px;
+}
+
+.page-footer--index {
   display: none;
+}
+
+.page-footer__logo-wrapper {
+  margin-bottom: 40px;
+}
+
+.page-footer__logo-desktop {
+  display: none;
+}
+
+.page-footer__logo {
+  display: block;
+  line-height: 0;
+  text-align: center;
+
+  svg {
+    fill: $main-color;
+  }
+
+  &[href] {
+    &:hover,
+    &:focus {
+      svg {
+        fill: #d22856;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+
+      svg {
+        fill: $main-color;
+      }
+    }
+  }
 }
 
 @media (min-width: $width-tablet) {
@@ -13,37 +54,8 @@
 
   .page-footer__logo-wrapper {
     width: 147px;
+    margin-bottom: 0;
     margin-right: 74px;
-  }
-
-  .page-footer__logo {
-    display: block;
-    line-height: 0;
-
-    svg {
-      fill: $main-color;
-    }
-
-    &[href] {
-      &:hover,
-      &:focus {
-        svg {
-          fill: #d22856;
-        }
-      }
-
-      &:active {
-        opacity: 0.3;
-
-        svg {
-          fill: $main-color;
-        }
-      }
-    }
-  }
-
-  .page-footer__logo-desktop {
-    display: none;
   }
 
   .page-footer__social {

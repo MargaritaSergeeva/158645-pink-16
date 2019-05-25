@@ -20,6 +20,10 @@
 }
 
 @media (min-width: $width-desktop) {
+  .photo-public {
+    margin-bottom: 28px;
+  }
+
   .photo-public__wrapper {
     width: $width-desktop;
     padding-top: 54px;
