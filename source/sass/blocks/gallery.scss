@@ -10,7 +10,9 @@
 
 @media (min-width: $width-tablet) {
   .gallery {
-    width: $width-tablet;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .gallery__wrapper {
@@ -25,12 +27,6 @@
 }
 
 @media (min-width: $width-desktop) {
-  .gallery {
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-  }
-
   .gallery__wrapper {
     @include indent;
     width: $width-desktop;
