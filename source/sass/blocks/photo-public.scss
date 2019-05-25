@@ -1,0 +1,20 @@
+.photo-public {
+  background-color: #f2f2f2;
+}
+
+.photo-public__wrapper {
+  width: $width-mobile;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 20px;
+  padding-bottom: 41px;
+}
+
+@media (min-width: $width-tablet) {
+  .photo-public__wrapper {
+    @include indent-mobile;
+    width: $width-tablet;
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+}

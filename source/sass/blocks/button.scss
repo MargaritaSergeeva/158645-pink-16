@@ -27,6 +27,47 @@
   }
 }
 
+.button--pink {
+  color: #d22856;
+
+  background-color: transparent;
+  border-color: #d22856;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+
+    background-color: #d22856;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3) ;
+  }
+}
+
+.button--pink-reset {
+  color: rgba($main-color, 0.1);
+
+  background-color: transparent;
+  border-color: rgba($main-color, 0.1);
+
+  &:hover,
+  &:focus {
+    color: rgba($main-color, 0.3);
+
+    background-color: transparent;
+    border-color: rgba($main-color, 0.3);
+  }
+
+  &:active {
+    color: #ffffff;
+
+    background-color: $main-color;
+    border-color: $main-color;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $width-tablet) {
   .button {
     padding-left: 44px;

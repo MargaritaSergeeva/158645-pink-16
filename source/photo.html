@@ -248,53 +248,77 @@
         <p class="intro__text">Затмите их всех!</p>
         <p class="intro__text">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
-      <section class="photo-public">
+      <section class="inner-page__photo-public photo-public">
         <h2 class="visually-hidden">Публикация собственных фотографий</h2>
-        <form class="photo-public__form photo-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="photo-form__wrapper">
-            <div class="photo-form__image-wrapper">
-              <picture>
-                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
-                <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-                <img class="photo-form__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Широкая дорога c деревьями по обочинам в снегу.">
-              </picture>
-              <label class="visually-hidden">
-                Загрузите фото
-                <input class="visually-hidden" type="file" name="user-photo">
-              </label>
+        <div class="photo-public__wrapper">
+          <form class="photo-public__form photo-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="photo-form__wrapper">
+              <div class="photo-form__image-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                  <img class="photo-form__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Широкая дорога c деревьями по обочинам в снегу.">
+                </picture>
+                <label class="visually-hidden">
+                  Загрузите фото
+                  <input class="visually-hidden" type="file" name="user-photo">
+                </label>
+              </div>
+              <div class="photo-form__range">
+                <div class="photo-form__label-wrapper">
+                  <label class="photo-form__icon photo-form__icon--crop photo-form__icon--active" for="crop" tabindex="0">
+                    <span class="visually-hidden">Обрезка</span>
+                    <svg width="45" height="45" focusable="false" aria-hidden="true">
+                      <use xlink:href="#icon-editor-crop"></use>
+                    </svg>
+                  </label>
+                  <label class="photo-form__icon photo-form__icon--fill" for="fill" tabindex="0">
+                    <span class="visually-hidden">Заливка</span>
+                    <svg width="48" height="48" focusable="false" aria-hidden="true">
+                      <use xlink:href="#icon-editor-fill"></use>
+                    </svg>
+                  </label>
+                  <label class="photo-form__icon photo-form__icon--contrast" for="contrast" tabindex="0">
+                    <span class="visually-hidden">Контраст</span>
+                    <svg width="32" height="32" focusable="false" aria-hidden="true">
+                      <use xlink:href="#icon-editor-contrast"></use>
+                    </svg>
+                  </label>
+                </div>
+                <div class="photo-form__controlers-wrapper">
+                  <div class="photo-form__scale-wrapper photo-form__scale-wrapper--crop photo-form__scale-wrapper--active">
+                    <input class="visually-hidden" id="crop" type="range" name="crop" min="0" max="100" step="1" focusable="false" aria-hidden="true">
+                    <div class="photo-form__scale-bar"></div>
+                    <button class="photo-form__scale-button" type="button">
+                      <span class="visually-hidden">Передвинуть бегунок</span>
+                    </button>
+                  </div>
+                  <div class="photo-form__scale-wrapper photo-form__scale-wrapper--fill">
+                    <input class="visually-hidden" id="fill" type="range" name="fill" min="0" max="100" step="1" focusable="false" aria-hidden="true">
+                    <div class="photo-form__scale-bar"></div>
+                    <button class="photo-form__scale-button" type="button">
+                      <span class="visually-hidden">Передвинуть бегунок</span>
+                    </button>
+                  </div>
+                  <div class="photo-form__scale-wrapper photo-form__scale-wrapper--contrast">
+                    <input class="visually-hidden" id="contrast" type="range" name="contrast" min="-50" max="50" step="1" focusable="false" aria-hidden="true">
+                    <div class="photo-form__scale-bar"></div>
+                    <button class="photo-form__scale-button" type="button">
+                      <span class="visually-hidden">Передвинуть бегунок</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="photo-form__button-wrapper">
+                  <button class="photo-form__button button button--pink" type="submit">Запостить</button>
+                  <button class="photo-form__button button button--pink-reset" type="reset">Отмена</button>
+                </div>
+              </div>
             </div>
-            <fieldset class="photo-form__range">
-              <label class="photo-form__icon photo-form__icon--crop" for="crop">
-                <span class="visually-hidden">Обрезка</span>
-                <svg width="44" height="44" focusable="false" aria-hidden="true">
-                  <use xlink:href="#icon-editor-crop"></use>
-                </svg>
-              </label>
-              <input class="photo-form__scale" id="crop" type="range" name="crop" min="0" max="100" step="1">
-              <label class="photo-form__icon photo-form__icon--fill" for="fill">
-                <span class="visually-hidden">Заливка</span>
-                <svg width="48" height="43" focusable="false" aria-hidden="true">
-                  <use xlink:href="#icon-editor-fill"></use>
-                </svg>
-              </label>
-              <input class="photo-form__scale" id="fill" type="range" name="fill" min="0" max="100" step="1">
-              <label class="photo-form__icon photo-form__icon--contrast" for="contrast">
-                <span class="visually-hidden">Контраст</span>
-                <svg width="32" height="32" focusable="false" aria-hidden="true">
-                  <use xlink:href="#icon-editor-contrast"></use>
-                </svg>
-              </label>
-              <input class="photo-form__scale" id="contrast" type="range" name="contrast" min="-50" max="50" step="1">
-            </fieldset>
-            <div class="photo-form__buttons">
-              <button class="photo-form__button button" type="submit">Запостить</button>
-              <button class="photo-form__button button button-reset" type="reset">Отмена</button>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer container">
