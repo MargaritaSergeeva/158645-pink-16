@@ -6,33 +6,37 @@
 
 .photo-form__image {
   display: block;
+  width: 280px;
+  height: auto;
 }
 
-.photo-form__label-wrapper {
+.photo-form__controls-block {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  padding-right: 48px;
-  padding-left: 56px;
+  padding-left: 54px;
+  padding-right: 55px;
+  padding-bottom: 71px;
+  margin-bottom: 38px;
+
+  border-bottom : 1px solid rgba($main-color, 0.1);
 }
 
 .photo-form__icon {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 48px;
-  min-height: 48px;
-  margin-right: 31px;
+  height: 48px;
+  margin-right: 32px;
 
   line-height: 0;
 
   opacity: 0.3;
   outline: none;
 
-  &:last-child {
-    margin-right: 0;
-  }
-
   svg {
+    width: 48px;
+    height: 48px;
     fill: $main-color;
   }
 
@@ -67,24 +71,29 @@
 
 .photo-form__icon--fill {
   margin-top: 2px;
-  margin-right: 40px;
 }
 
-.photo-form__controlers-wrapper {
-  margin-bottom: 38px;
+.photo-form__icon--contrast {
+  margin-right: 0;
+
+  svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .photo-form__scale-wrapper {
-  position: relative;
+  position: absolute;
+  top: 85px;
+  left: 0;
+
   display: none;
-  padding-top: 15px;
-  padding-bottom: 34px;
+  width: 320px;
+
   padding-left: 38px;
   padding-right: 42px;
 
   line-height: 0;
-
-  border-bottom : 1px solid rgba($main-color, 0.1);
 }
 
 .photo-form__scale-wrapper--active {
@@ -100,7 +109,7 @@
 
 .photo-form__scale-button {
   position: absolute;
-  top: 9px;
+  top: -6px;
   right: 75px;
 
   width: 14px;
@@ -112,6 +121,10 @@
   border-radius: 100%;
 
   cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 .photo-form__button-wrapper {
@@ -134,13 +147,6 @@
     justify-content: space-between;
   }
 
-  .photo-form__range {
-    display: flex;
-    flex-wrap: wrap;
-    width: 285px;
-    padding-top: 8px;
-  }
-
   .photo-form__image-wrapper {
     margin-bottom: 0;
     padding-left: 0;
@@ -153,20 +159,56 @@
     height: auto;
   }
 
-  .photo-form__label-wrapper {
+  .photo-form__work-block {
+    display: flex;
     flex-direction: column;
-    width: 48px;
-    margin-right: 17px;
-    margin-bottom: 20px;
-    padding-right: 0;
+    width: 275px;
+    padding-top: 8px;
+  }
+
+  .photo-form__controls-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    border-bottom : none;
+  }
+
+  .photo-form__control-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    padding-right: 18px;
+    padding-bottom: 17px;
+
+    border-bottom : 1px solid rgba($main-color, 0.1);
+  }
+
+  .photo-form__scale-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 202px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .photo-form__icon {
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    width: 48px;
-    min-height: 58px;
+    width: 38px;
+    height: 30px;
+    margin-right: auto;
+    padding-left: 2px;
+
     opacity: 1;
 
     svg {
@@ -193,57 +235,153 @@
 
   .photo-form__icon--fill {
     margin-top: 0;
-    margin-right: 0;
+    padding-top: 2px;
+    padding-left: 3px;
 
     svg {
-      width: 22px;
-      height: 24px;
+      width: 23px;
+      height: 26px;
     }
   }
 
   .photo-form__icon--contrast {
+    padding-top: 3px;
+    padding-left: 8px;
+
     svg {
       width: 16px;
       height: 16px;
     }
   }
 
-  .photo-form__controlers-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 202px;
-    margin-bottom: 0;
-  }
-
-  .photo-form__scale-wrapper {
-    display: block;
-    padding-top: 15px;
-    padding-bottom: 34px;
-    padding-left: 0;
-    padding-right: 0;
-
-    border-bottom : none;
-  }
-
   .photo-form__scale-button {
-    top: 9px;
-    right: 75px;
+    top: 5px;
 
-    width: 14px;
-    height: 14px;
+    &--crop {
+      right: 42px;
+    }
 
-    border: 2px solid #d22856;
+    &--fill {
+      left: 25px;
+    }
+
+    &--contrast {
+      right: 92px;
+    }
   }
 
   .photo-form__button-wrapper {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 22px;
+      margin-top: auto;
+      padding-left: 2px;
+      padding-right: 13px;
   }
 
   .photo-form__button {
+    width: 100%;
+    padding-left: 31px;
+
     &:first-child {
-      margin-bottom: 12px;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .photo-form__image-wrapper {
+    margin-top: 3px;
+  }
+
+  .photo-form__work-block {
+    width: 412px;
+    padding-top: 0;
+  }
+
+  .photo-form__control-wrapper {
+    margin-bottom: 13px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+  }
+
+  .photo-form__scale-wrapper {
+    width: 288px;
+    padding-top: 22px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .photo-form__icon {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 48px;
+    height: 48px;
+    padding-left: 2px;
+
+    svg {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  .photo-form__icon--crop {
+    svg {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .photo-form__icon--fill {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 3px;
+
+    svg {
+      width: 53px;
+      height: 52px;
+    }
+  }
+
+  .photo-form__icon--contrast {
+    padding-top: 6px;
+    padding-left: 8px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .photo-form__scale-button {
+    top: 16px;
+
+    &--crop {
+      left: 70px;
+    }
+
+    &--fill {
+      left: 248px;
+    }
+
+    &--contrast {
+      right: 114px;
+    }
+  }
+
+  .photo-form__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2px;
+    padding-right: 0;
+  }
+
+  .photo-form__button {
+    width: 182px;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    padding-left: 22px;
+
+    &:first-child {
+      margin-bottom: 0;
     }
   }
 }

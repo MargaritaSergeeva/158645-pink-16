@@ -18,3 +18,13 @@
     padding-bottom: 54px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .photo-public__wrapper {
+    width: $width-desktop;
+    padding-top: 54px;
+    padding-bottom: 57px;
+    padding-left: 90px;
+    padding-right: 70px;
+  }
+}
