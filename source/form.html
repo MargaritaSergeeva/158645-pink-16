@@ -60,29 +60,29 @@
       </div>
       <section class="photo-contest">
         <form class="photo-contest__form contest-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="contest-form__name-fieldset name-fieldset">
+          <div class="contest-form__name-fieldset name-fieldset">
             <legend class="visually-hidden">Укажите ваше полное имя</legend>
             <p class="name-fieldset__block">
               <label class="name-fieldset__label">
-                Фамилия:
+                <span class="name-fieldset__label-text">Фамилия:</span>
                 <input class="name-fieldset__input" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *" required>
               </label>
             </p>
             <p class="name-fieldset__block">
               <label class="name-fieldset__label">
-                Имя:
+                <span class="name-fieldset__label-text">Имя:</span>
                 <input class="name-fieldset__input" id="name" type="text" name="first-name" placeholder="Введите ваше имя *" required>
               </label>
             </p>
             <p class="name-fieldset__block">
               <label class="name-fieldset__label">
-                Отчество:
+                <span class="name-fieldset__label-text">Отчество:</span>
                 <input class="name-fieldset__input" id="middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
               </label>
             </p>
-          </fieldset>
+          </div>
           <div class="contest-form__checkbox-wrapper">
-            <fieldset class="contest-form__checkbox-fieldset checkbox-fieldset">
+            <div class="contest-form__checkbox-fieldset checkbox-fieldset">
               <legend class="checkbox-fieldset__legend">Ваши безбашенные достижения в путешествии</legend>
               <input class="checkbox-fieldset__input visually-hidden" id="shark" type="checkbox" name="shark" checked>
               <label class="checkbox-fieldset__label" for="shark">Сделал селфи с акулой</label>
@@ -96,9 +96,9 @@
               <label class="checkbox-fieldset__label" for="tower">Удержал башню</label>
               <input class="checkbox-fieldset__input visually-hidden" id="hotel" type="checkbox" name="hotel">
               <label class="checkbox-fieldset__label" for="hotel">Разгромил отель</label>
-            </fieldset>
+            </div>
           </div>
-          <fieldset class="contest-form__contacts-fieldset contacts-fieldset">
+          <div class="contest-form__contacts-fieldset contacts-fieldset">
             <legend class="contacts-fieldset__legend">Контактная информация</legend>
             <p class="contacts-fieldset__block">
               <label class="contacts-fieldset__label" for="tel">Номер телефона</label>
@@ -108,9 +108,9 @@
               <label class="contacts-fieldset__label" for="email">Адрес почты</label>
               <input class="contacts-fieldset__input" id="email" type="email" name="user-email" placeholder="Введите почту *" required>
             </p>
-          </fieldset>
+          </div>
           <div class="contest-form__radio-wrapper">
-            <fieldset class="contest-form__radio-fieldset radio-fieldset">
+            <div class="contest-form__radio-fieldset radio-fieldset">
               <legend class="radio-fieldset__legend">С каким приложением путешествовали?</legend>
               <input class="radio-fieldset__input visually-hidden" id="ios" type="radio" name="app-type" value="ios" checked>
               <label class="radio-fieldset__label" for="ios">Pink для iOS</label>
@@ -118,15 +118,15 @@
               <label class="radio-fieldset__label" for="android">Pink на Android</label>
               <input class="radio-fieldset__input visually-hidden" id="win" type="radio" name="app-type" value="win">
               <label class="radio-fieldset__label" for="win">Windows Phone</label>
-            </fieldset>
+            </div>
           </div>
-          <fieldset class="contest-form__text-fieldset text-fieldset">
+          <div class="contest-form__text-fieldset text-fieldset">
             <legend class="text-fieldset__legend">Опишите свои эмоции</legend>
             <label class="text-fieldset__label">
               <span class="visually-hidden">Описание эмоций</span>
               <textarea class="text-fieldset__text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </label>
-          </fieldset>
+          </div>
           <div class="contest-form__button-wrapper">
             <button class="contest-form__button green-button" type="submit">Отправить форму</button>
             <p class="contest-form__required">
