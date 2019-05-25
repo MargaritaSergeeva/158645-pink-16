@@ -1,6 +1,7 @@
 .inner-page__title-wrapper {
   min-height: 240px;
   margin-top: -70px;
+  margin-bottom: 25px;
   padding-top: 99px;
   padding-bottom: 15px;
 
@@ -30,10 +31,19 @@
   text-align: center;
 }
 
+.inner-page__intro {
+  margin-bottom: 29px;
+}
+
+.inner-page__gallery {
+  margin-bottom: 20px;
+}
+
 @media (min-width: $width-tablet) {
   .inner-page__title-wrapper {
     min-height: 440px;
     margin-top: -110px;
+    margin-bottom: 62px;
     padding-top: 180px;
     padding-bottom: 20px;
 
@@ -53,12 +63,21 @@
     font-size: 50px;
     line-height: 60px;
   }
+
+  .inner-page__intro {
+    margin-bottom: 46px;
+  }
+
+  .inner-page__gallery {
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: $width-desktop) {
   .inner-page__title-wrapper {
     min-height: 394px;
     padding-top: 173px;
+    margin-bottom: 62px;
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: 2560px auto;
@@ -72,5 +91,13 @@
     width: $width-desktop;
     padding-left: 300px;
     padding-right: 300px;
+  }
+
+  .inner-page__intro {
+    margin-bottom: 58px;
+  }
+
+  .inner-page__gallery {
+    margin-bottom: 9px;
   }
 }

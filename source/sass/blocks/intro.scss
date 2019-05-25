@@ -1,8 +1,13 @@
 .intro {
-  padding-top: 45px;
+  padding-top: 20px;
   padding-left: 35px;
   padding-right: 35px;
-  padding-bottom: 49px;
+  padding-bottom: 20px;
+}
+
+.intro--photo-page {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .intro__text {
@@ -14,10 +19,10 @@
 
 @media (min-width: $width-tablet) {
   .intro {
-    padding-top: 92px;
+    padding-top: 30px;
     padding-left: 111px;
     padding-right: 111px;
-    padding-bottom: 76px;
+    padding-bottom: 30px;
   }
 
   .intro__text {
@@ -29,6 +34,9 @@
   .intro {
     padding-left: 170px;
     padding-right: 170px;
-    padding-bottom: 88px;
+  }
+
+  .intro--photo-page {
+    padding-bottom: 8px;
   }
 }
