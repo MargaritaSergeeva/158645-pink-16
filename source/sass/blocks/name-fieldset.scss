@@ -1,20 +1,23 @@
 .name-fieldset {
-  @include indent-mobile;
-  width: $width-mobile;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 5px;
+  padding-bottom: 0;
+
+  border: none;
 }
 
 .name-fieldset__block {
   margin: 0;
   margin-bottom: 17px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .name-fieldset__label-text {
   display: block;
   margin-bottom: 5px;
   padding-left: 22px;
+  padding-right: 22px;
 
   font-size: 14px;
   line-height: 30px;
@@ -25,18 +28,21 @@
 .name-fieldset__input {
   display: block;
   width: 100%;
-  padding-top: 19px;
-  padding-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
 
   font-size: 18px;
+  line-height: 30px;
 
   border: 2px solid #e5e5e5;
   outline: none;
 
   &::placeholder {
     font-size: 18px;
+    line-height: 30px;
+    color: $main-color;
   }
 
   &:hover {
@@ -54,7 +60,6 @@
     width: $width-tablet;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 0;
   }
 
   .name-fieldset__block {
