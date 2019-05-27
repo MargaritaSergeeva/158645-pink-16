@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   font-size: 14px;
   line-height: 18px;
   color: $main-color;
@@ -29,6 +28,7 @@
 }
 
 .copyright__text {
+  margin-top: 6px;
   margin-right: 15px;
 
   font-weight: 400;

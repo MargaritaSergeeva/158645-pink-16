@@ -41,7 +41,7 @@
   }
 
   &:active {
-    color: rgba(#ffffff, 0.3) ;
+    color: rgba(#ffffff, 0.3);
   }
 }
 
@@ -60,7 +60,7 @@
   }
 
   &:active {
-    color: #ffffff;
+    color: rgba(#ffffff, 0.3);
 
     background-color: $main-color;
     border-color: $main-color;

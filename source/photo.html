@@ -253,7 +253,7 @@
         <div class="photo-public__wrapper">
           <form class="photo-public__form photo-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="photo-form__wrapper">
-              <div class="photo-form__image-wrapper">
+              <div class="photo-form__image-wrapper" tabindex="0">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
@@ -277,7 +277,7 @@
                       </svg>
                     </label>
                     <div class="photo-form__scale-wrapper photo-form__scale-wrapper--crop photo-form__scale-wrapper--active">
-                      <input class="visually-hidden" id="crop" type="range" name="crop" min="0" max="100" step="1" focusable="false" aria-hidden="true">
+                      <input class="visually-hidden" id="crop" type="range" name="crop" min="0" max="100" step="1">
                       <div class="photo-form__scale-bar"></div>
                       <button class="photo-form__scale-button photo-form__scale-button--crop" type="button">
                         <span class="visually-hidden">Передвинуть бегунок</span>
@@ -292,7 +292,7 @@
                       </svg>
                     </label>
                     <div class="photo-form__scale-wrapper photo-form__scale-wrapper--fill">
-                      <input class="visually-hidden" id="fill" type="range" name="fill" min="0" max="100" step="1" focusable="false" aria-hidden="true">
+                      <input class="visually-hidden" id="fill" type="range" name="fill" min="0" max="100" step="1">
                       <div class="photo-form__scale-bar"></div>
                       <button class="photo-form__scale-button photo-form__scale-button--fill" type="button">
                         <span class="visually-hidden">Передвинуть бегунок</span>
@@ -307,7 +307,7 @@
                       </svg>
                     </label>
                     <div class="photo-form__scale-wrapper photo-form__scale-wrapper--contrast">
-                      <input class="visually-hidden" id="contrast" type="range" name="contrast" min="-50" max="50" step="1" focusable="false" aria-hidden="true">
+                      <input class="visually-hidden" id="contrast" type="range" name="contrast" min="-50" max="50" step="1">
                       <div class="photo-form__scale-bar"></div>
                       <button class="photo-form__scale-button photo-form__scale-button--contrast" type="button">
                         <span class="visually-hidden">Передвинуть бегунок</span>
