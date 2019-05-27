@@ -107,3 +107,61 @@
     padding-left: 60px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .checkbox-fieldset {
+    padding-bottom: 12px;
+  }
+
+  .checkbox-fieldset__label {
+    &:nth-of-type(3n+1) {
+      width: 260px;
+    }
+
+    &:nth-of-type(3n+2) {
+      width: 240px;
+    }
+
+    &:nth-of-type(3n) {
+      width: 230px;
+    }
+  }
+
+  .checkbox-fieldset__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 58px;
+    padding-right: 38px;
+
+    .checkbox-fieldset__label--shark {
+      width: 260px;
+      order: -5;
+    }
+
+    .checkbox-fieldset__label--beach {
+      width: 260px;
+      order: -2;
+    }
+
+    .checkbox-fieldset__label--chuck-norris {
+      order: -4;
+      width: 242px;
+    }
+
+    .checkbox-fieldset__label--gift {
+      order: -1;
+      width: 240px;
+    }
+
+    .checkbox-fieldset__label--tower {
+      order: -3;
+      width: 230px;
+    }
+
+    .checkbox-fieldset__label--hotel {
+      order: 0;
+      width: 230px;
+    }
+  }
+}

@@ -3,3 +3,9 @@
     margin-bottom: 50px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .photo-contest {
+    margin-bottom: 0;
+  }
+}

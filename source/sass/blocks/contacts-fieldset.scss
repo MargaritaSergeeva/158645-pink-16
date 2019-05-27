@@ -138,3 +138,31 @@
   }
 }
 
+@media (min-width: $width-tablet) {
+  .contacts-fieldset {
+    padding-bottom: 13px;
+  }
+
+  .contacts-fieldset__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contacts-fieldset__legend {
+    margin-bottom: 28px;
+  }
+
+  .contacts-fieldset__block {
+    width: 375px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+
+  .contacts-fieldset__input {
+    padding-left: 18px;
+  }
+}

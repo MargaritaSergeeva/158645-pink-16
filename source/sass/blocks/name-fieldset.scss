@@ -80,3 +80,9 @@
     padding-right: 20px;
   }
 }
+
+@media (min-width: $width-desktop) {
+  .name-fieldset__block {
+    margin-bottom: 53px;
+  }
+}

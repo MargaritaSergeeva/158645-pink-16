@@ -111,14 +111,7 @@
   }
 
   .radio-fieldset__label {
-    position: relative;
-    display: block;
-    margin-bottom: 36px;
-    padding-top: 4px;
-    padding-bottom: 5px;
     padding-left: 60px;
-
-    font-size: 18px;
 
     &::before {
       box-shadow: inset 0 0 0 10px #ffffff;
@@ -129,5 +122,29 @@
         background-color: #ffffff;
       }
     }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .radio-fieldset {
+    padding-top: 0;
+    padding-bottom: 55px;
+
+    border: solid 2px #e5e5e5;
+  }
+
+
+  .radio-fieldset__legend {
+    margin-top: -15px;
+    margin-bottom: 40px;
+  }
+
+  .radio-fieldset__label {
+    margin-bottom: 35px;
+    margin-left: 44px;
+
+    padding-left: 60px;
+
+    font-size: 18px;
   }
 }

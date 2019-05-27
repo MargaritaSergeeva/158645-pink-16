@@ -72,4 +72,21 @@
   .text-fieldset__text {
     min-height: 193px;
   }
+
+  @media (min-width: $width-desktop) {
+    .text-fieldset {
+      padding-top: 0;
+      padding-bottom: 43px;
+
+      border: solid 2px #e5e5e5;
+    }
+
+    .text-fieldset__legend {
+      margin-bottom: 28px;
+    }
+
+    .text-fieldset__text {
+      min-height: 128px;
+    }
+  }
 }
