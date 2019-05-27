@@ -1,49 +1,53 @@
-var overlay = document.querySelector('.overlay');
 var modalError = document.querySelector('.modal--error');
 var modalAright = document.querySelector('.modal--aright');
+var modalErrorButton = document.querySelector('.modal__button--error');
+var modalArightButton = document.querySelector('.modal__button--aright');
 var submitButton = document.querySelector('.contest-form__button');
-var userEmail = document.querySelector("#email");
-var userName = document.querySelector("#name");
-var userLastName = document.querySelector("#last-name");
-var userMiddleName = document.querySelector("#middle-name");
+var userEmail = document.querySelector('#email');
+var userName = document.querySelector('#name');
+var userLastName = document.querySelector('#last-name');
+var userMiddleName = document.querySelector('#middle-name');
 var isStorageSupport = true;
-var storageEmail = "";
-var storageName = "";
-var storageLastName = "";
+var storageEmail = '';
+var storageName = '';
+var storageLastName = '';
 
 var modalErrorOpen = function () {
   modalError.classList.add('modal--show');
-  overlay.classList.add('overlay--show');
   modalError.classList.add('animation');
 }
 
 var modalErrorClose = function () {
   modalError.classList.remove('modal--show');
-  overlay.classList.remove('overlay--show');
   modalError.classList.remove('animation');
 }
 
 var modalArightOpen = function () {
   modalAright.classList.add('modal--show');
-  overlay.classList.add('overlay--show');
   modalAright.classList.add('animation');
 }
 
 var modalArightClose = function () {
   modalAright.classList.remove('modal--show');
-  overlay.classList.remove('overlay--show');
   modalAright.classList.remove('animation');
 }
 
+var errorRemove = function () {
+  userEmail.classList.remove('error');
+  userName.classList.remove('error');
+  userLastName.classList.remove('error');
+}
+
   try {
-    storageName = localStorage.getItem("name");
-    storageLastName = localStorage.getItem("last-name");
-    storageEmail = localStorage.getItem("email");
+    storageName = localStorage.getItem('name');
+    storageLastName = localStorage.getItem('last-name');
+    storageEmail = localStorage.getItem('email');
   } catch (err) {
     isStorageSupport = false;
   };
 
   submitButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
     if (storageName) {
       userLastName.value = storageLastName;
       userName.focus();
@@ -53,19 +57,33 @@ var modalArightClose = function () {
     if (storageName) {
       userName.value = storageName;
       if (storageLastName) {
-        userMiddleName.focus();
+        userEmail.focus();
       } else {
         userLastName.focus();
       }
     }
     if (!userName.value || !userLastName.value || !userEmail.value) {
-      evt.preventDefault();
       modalErrorOpen();
+      if (!userName.value) {
+        userName.classList.add('error');
+      } else {
+        userName.classList.remove('error');
+      }
+      if (!userLastName.value) {
+        userLastName.classList.add('error');
+      } else {
+        userLastName.classList.remove('error');
+      }
+      if (!userEmail.value) {
+        userEmail.classList.add('error');
+      } else {
+        userEmail.classList.remove('error');
+      }
     } else {
-      evt.returnValue = true;
-      localStorage.setItem("last-name", userLastName.value);
-      localStorage.setItem("name", userName.value);
-      localStorage.setItem("email", userEmail.value);
+      localStorage.setItem('last-name', userLastName.value);
+      localStorage.setItem('name', userName.value);
+      localStorage.setItem('email', userEmail.value);
+      errorRemove();
       modalArightOpen();
     }
   });
@@ -74,20 +92,20 @@ var modalArightClose = function () {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (modalError.classList.contains('modal--show')) {
-        modalErrorClose ();
+        modalErrorClose();
       }
       if (modalAright.classList.contains('modal--show')) {
-        modalArightClose ();
+        modalArightClose();
       }
     }
   });
 
-  overlay.addEventListener('click', function(evt) {
+  modalErrorButton.addEventListener('click', function (evt) {
     evt.preventDefault();
-    if (modalError.classList.contains('modal--show')) {
-      modalErrorClose ();
-    }
-    if (modalAright.classList.contains('modal--show')) {
-      modalArightClose ();
-    }
+    modalErrorClose();
+  });
+
+  modalArightButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modalArightClose();
   });
