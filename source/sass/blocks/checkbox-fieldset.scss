@@ -4,7 +4,6 @@
 }
 
 .checkbox-fieldset__legend {
-  display: block;
   margin-top: 0;
   margin-bottom: 39px;
   padding-left: 20px;
@@ -17,7 +16,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  background: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .checkbox-fieldset__label {
@@ -83,4 +82,28 @@
 }
 
 @media (min-width: $width-tablet) {
+  .checkbox-fieldset {
+    padding-top: 0;
+    padding-bottom: 48px;
+
+    border: solid 2px #e5e5e5;
+  }
+
+  .checkbox-fieldset__legend {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -16px;
+    margin-bottom: 38px;
+    padding-left: 31px;
+    padding-right: 32px;
+
+    line-height: 30px;
+
+    background-color: #ffffff;
+  }
+
+  .checkbox-fieldset__label {
+    padding-left: 60px;
+  }
 }

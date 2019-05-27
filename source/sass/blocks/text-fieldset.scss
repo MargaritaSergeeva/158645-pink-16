@@ -1,10 +1,8 @@
 .text-fieldset {
   padding-top: 20px;
-
 }
 
 .text-fieldset__legend {
-  display: block;
   margin-top: 0;
   margin-bottom: 16px;
   padding-left: 20px;
@@ -46,5 +44,32 @@
   &:active,
   &:focus {
     border: 2px solid #d22856;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .text-fieldset {
+    padding-top: 0;
+    padding-bottom: 51px;
+
+    border: solid 2px #e5e5e5;
+  }
+
+  .text-fieldset__legend {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -16px;
+    margin-bottom: 31px;
+    padding-left: 38px;
+    padding-right: 39px;
+
+    line-height: 30px;
+
+    background-color: #ffffff;
+  }
+
+  .text-fieldset__text {
+    min-height: 193px;
   }
 }

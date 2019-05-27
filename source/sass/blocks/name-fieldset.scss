@@ -56,12 +56,6 @@
 }
 
 @media (min-width: $width-tablet) {
-  .name-fieldset {
-    width: $width-tablet;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   .name-fieldset__block {
     margin: 0;
     margin-bottom: 52px;
@@ -75,15 +69,13 @@
 
   .name-fieldset__label-text {
     margin-bottom: 0;
-    margin-right: 18px;
-    padding-left: 0;
+    margin-right: 19px;
+    padding: 0;
   }
 
   .name-fieldset__input {
     flex-grow: 1;
     width: auto;
-    padding-top: 19px;
-    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
   }

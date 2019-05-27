@@ -1,6 +1,5 @@
 .button-green {
   display: block;
-  width: 100%;
   padding-top: 14px;
   padding-bottom: 15px;
   padding-left: 35px;
@@ -25,4 +24,16 @@
   &:active {
     color: rgba(#ffffff, 0.3) ;
   }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+  }
+
+  &:hover:disabled {
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+  }
 }
+
+
