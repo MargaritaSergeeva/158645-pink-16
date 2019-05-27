@@ -6,6 +6,8 @@
   &[href] {
     &:hover,
     &:focus {
+      outline: none;
+
       svg {
         fill: #d22856;
       }

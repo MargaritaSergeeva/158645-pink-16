@@ -58,6 +58,10 @@
   }
 }
 
+.checkbox-fieldset__input:focus + .checkbox-fieldset__label::before {
+  border: 2px solid $main-color;
+}
+
 .checkbox-fieldset__input:checked + .checkbox-fieldset__label::before {
   background-image: url("../img/icon-yes_alternative.svg");
   background-repeat: no-repeat;
