@@ -108,7 +108,7 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: 1200px auto;
-    background-position: center 0%;
+    background-position: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
