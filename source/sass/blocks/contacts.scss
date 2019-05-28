@@ -78,7 +78,7 @@
   background-size: 320px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-image: url("../img/bg-map-mobile@2x.png");
   }
 
   &::before {
@@ -185,7 +185,7 @@
     background-size: 700px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-image: url("../img/bg-map-tablet@2x.png");
     }
 
     &::before {

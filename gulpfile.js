@@ -18,7 +18,6 @@ var include = require("posthtml-include");
 var htmlmin = require("gulp-htmlmin");
 var jsmin = require("gulp-uglify");
 
-
 gulp.task("clean", function () {
   return del("build");
 });
@@ -93,10 +92,9 @@ gulp.task("images", function () {
     base: "source/img"
   })
     .pipe(imagemin([
-      imagemin.jpegtran({
-        progressive: true
-      }),
-      imagemin.svgo(),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"));
 });
