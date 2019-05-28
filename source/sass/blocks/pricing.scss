@@ -22,7 +22,7 @@
 .pricing__wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 90px;
+  padding-top: 89px;
   padding-bottom: 47px;
 }
 
@@ -220,7 +220,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 88px;
-    padding-bottom: 68px;
+    padding-bottom: 70px;
   }
 
   .pricing__table {
@@ -372,10 +372,16 @@
 }
 
 @media (min-width: $width-desktop) {
+  .pricing {
+    &::before {
+      border-top: 82px solid #ffffff;
+    }
+  }
+
   .pricing__wrapper {
     @include indent;
     width: $width-desktop;
-    padding-top: 149px;
+    padding-top: 148px;
     padding-bottom: 97px;
   }
 
