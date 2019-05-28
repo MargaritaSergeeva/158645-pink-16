@@ -42,7 +42,7 @@
   line-height: 0;
 
   opacity: 0.3;
-  outline: none;
+
 
   svg {
     width: 48px;
@@ -53,6 +53,7 @@
   &:hover,
   &:focus {
     opacity: 0.5;
+    outline: none;
   }
 
   &:active {
@@ -241,8 +242,10 @@
       fill: #d22856;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 1;
+      outline: 1px solid #e5e5e5;
 
       svg {
         fill: #d22856;

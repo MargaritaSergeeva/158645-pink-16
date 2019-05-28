@@ -39,6 +39,26 @@
 .photo__image-link--panorama {
   position: relative;
 
+  text-decoration: none;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: #d22856;
+  }
+
   &::after {
     content: "Панорама дня";
     position: absolute;
@@ -53,6 +73,7 @@
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
+    text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     vertical-align: middle;

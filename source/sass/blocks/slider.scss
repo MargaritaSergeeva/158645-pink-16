@@ -104,7 +104,6 @@
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: 100%;
-    outline: none;
     opacity: 0.3;
 
     cursor: pointer;
@@ -122,6 +121,7 @@
     &:hover,
     &:focus {
       opacity: 0.6;
+      outline: none;
     }
 
     &:active {

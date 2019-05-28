@@ -94,7 +94,7 @@
   }
 
   .checkbox-fieldset__legend {
-    width: fit-content;
+    width: 436px;
     margin-right: auto;
     margin-left: auto;
     margin-top: -16px;
@@ -118,6 +118,8 @@
   }
 
   .checkbox-fieldset__label {
+    margin-right: auto;
+
     &:nth-of-type(3n+1) {
       width: 260px;
     }
@@ -134,7 +136,6 @@
   .checkbox-fieldset__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding-left: 58px;
     padding-right: 38px;
 
