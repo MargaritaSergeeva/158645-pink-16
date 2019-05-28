@@ -35,7 +35,7 @@
   border-radius: 100%;
   outline: none;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     top: 16px;
@@ -60,7 +60,7 @@
 }
 
 .social__link--twitter {
-  &:after {
+  &::after {
     top: 16px;
     left: 14px;
 
@@ -73,7 +73,7 @@
 }
 
 .social__link--facebook {
-  &:after {
+  &::after {
     top: 12px;
     left: 19px;
 
@@ -86,7 +86,7 @@
 }
 
 .social__link--youtube {
-  &:after {
+  &::after {
     top: 15px;
     left: 17px;
 

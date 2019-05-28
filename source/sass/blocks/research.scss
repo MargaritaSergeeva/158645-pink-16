@@ -89,7 +89,7 @@
     @include indent;
     width: $width-desktop;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 67px;
   }
 
   .research__timer {
@@ -133,9 +133,5 @@
   .research-link {
     font-size: 18px;
     line-height: 30px;
-  }
-
-  .research__wrapper {
-    padding-bottom: 67px;
   }
 }

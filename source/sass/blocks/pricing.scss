@@ -62,7 +62,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     left: -2px;
 
     width: 73px;
@@ -386,7 +386,6 @@
   }
 
   .pricing__table-title--hit {
-
     &::before {
       width: 74px;
       height: 73px;
@@ -434,5 +433,4 @@
       top: 17px;
     }
   }
-
 }

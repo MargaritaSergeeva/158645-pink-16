@@ -237,10 +237,10 @@
     margin-left: 0;
 
     @media (max-width: 700px) {
-      margin-left: calc(100vw/2 - 700px/2);
+      margin-left: calc(100vw / 2 - 700px / 2);
     }
 
-    &:after {
+    &::after {
       top: 57px;
       right: 40px;
     }
@@ -321,10 +321,10 @@
     min-height: 506px;
 
     @media (max-width: 1200px) {
-      margin-left: calc(100vw/2 - 1200px/2);
+      margin-left: calc(100vw / 2 - 1200px / 2);
     }
 
-    &:after {
+    &::after {
       top: 54px;
       right: 130px;
     }
