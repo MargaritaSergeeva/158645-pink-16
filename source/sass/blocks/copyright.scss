@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   font-size: 14px;
   line-height: 18px;
   color: $main-color;
@@ -21,6 +22,10 @@
       fill: rgba($main-color, 0.3);
     }
   }
+
+  svg {
+    width: 27px;
+  }
 }
 
 .copyright__link-icon {
@@ -28,7 +33,7 @@
 }
 
 .copyright__text {
-  margin-top: 6px;
+  width: 88px;
   margin-right: 15px;
 
   font-weight: 400;
@@ -37,7 +42,7 @@
 @media (min-width: $width-tablet) {
   .copyright {
     min-width: 138px;
-    max-width: 200px;
+    max-width: 250px;
   }
 
   .copyright__link {
@@ -48,6 +53,11 @@
 @media (min-width: $width-desktop) {
   .copyright__link {
     font-size: 18px;
+  }
+
+  .copyright__text {
+    width: 112px;
+    margin-top: -6px;
   }
 }
 
