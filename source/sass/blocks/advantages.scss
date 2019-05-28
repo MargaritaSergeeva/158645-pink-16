@@ -247,7 +247,7 @@
       margin-right: 0;
     }
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       top: -5px;
@@ -260,7 +260,7 @@
     }
 
     &--mood {
-      &:before {
+      &::before {
         left: 4px;
 
         background-image: url("../../img/iphone-screen-1-desktop@1x.png");
@@ -268,7 +268,7 @@
     }
 
     &--change {
-      &:before {
+      &::before {
         left: 6px;
 
         background-image: url("../../img/iphone-screen-2-desktop@1x.png");
@@ -276,7 +276,7 @@
     }
 
     &--friend {
-      &:before {
+      &::before {
         left: 7px;
 
         background-image: url("../../img/iphone-screen-3-desktop@1x.png");
