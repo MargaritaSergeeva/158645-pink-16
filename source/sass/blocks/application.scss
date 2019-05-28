@@ -37,7 +37,7 @@
   margin-right: auto;
   margin-left: auto;
   padding-top: 28px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
 }
 
 .application__intro {
@@ -51,16 +51,19 @@
 .application__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
-  padding-right: 20px;
-  padding-left: 37px;
-  margin-bottom: 23px;
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 13px;
 }
 
 .application__list-item {
   margin-right: 35px;
+  margin-bottom: 10px;
 
-  &:last-child {
+  &:nth-child(3n) {
     margin-right: 0;
   }
 }
@@ -96,6 +99,8 @@
 }
 
 .aplication__description {
+  margin: 0;
+
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -108,7 +113,7 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: 1200px auto;
-    background-position: center;
+    background-position: center top;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -124,7 +129,7 @@
     margin-right: auto;
     margin-left: auto;
     padding-top: 204px;
-    padding-bottom: 92px;
+    padding-bottom: 110px;
 
     overflow: hidden;
   }
@@ -178,9 +183,7 @@
   }
 
   .application__list {
-    margin-bottom: 38px;
-    padding-right: 20px;
-    padding-left: 46px;
+    margin-bottom: 28px;
   }
 
   .aplication__description {
@@ -190,20 +193,16 @@
 
 @media (min-width: $width-desktop) {
   .application {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-size: 2560px auto;
-    background-position: center 0%;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
+    background-color: transparent;
+    background-image: none;
+    background: linear-gradient(transparent 852px, #1d2631 853px);
   }
 
   .application__wrapper {
     @include indent;
     width: $width-desktop;
     padding-top: 221px;
-    padding-bottom: 103px;
+    padding-bottom: 121px;
     overflow: hidden;
   }
 
@@ -235,6 +234,6 @@
   }
 
   .application__list {
-    margin-bottom: 58px;
+    margin-bottom: 48px;
   }
 }
