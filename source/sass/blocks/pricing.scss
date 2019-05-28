@@ -1,14 +1,28 @@
 .pricing {
+  position: relative;
   background-color: #f2f2f2;
-  background-image: url("../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    z-index: 1;
+
+    width: 0;
+    height: 0;
+
+    border-top: 25px solid #ffffff;
+    border-bottom: none;
+    border-right: 100vw solid transparent;
+    border-left: none;
+  }
 }
 
 .pricing__wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 91px;
+  padding-top: 90px;
   padding-bottom: 47px;
 }
 
@@ -194,6 +208,12 @@
 }
 
 @media (min-width: $width-tablet) {
+  .pricing {
+    &::before {
+      border-top: 52px solid #ffffff;
+    }
+  }
+
   .pricing__wrapper {
     @include indent-mobile;
     width: $width-tablet;

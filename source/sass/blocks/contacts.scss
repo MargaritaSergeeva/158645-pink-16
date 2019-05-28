@@ -226,14 +226,15 @@
   }
 
   .contacts__block {
+    width: 230px;
     margin-right: 80px;
     margin-bottom: 0;
 
-    &:nth-child(2n) {
+    &:nth-of-type(2n) {
       margin-left: 0;
     }
 
-    &:last-child {
+    &:nth-of-type(3n) {
       margin-right: 0;
     }
   }
@@ -244,17 +245,21 @@
     padding-right: 30px;
 
     .contacts__block--address {
+      order: -2;
       width: 230px;
-      margin-right: 84px;
+      margin-right: 85px;
     }
   }
 
   .contacts__block--phone {
-    margin-right: 102px;
+    order: -3;
+    width: 207px;
+    margin-right: 100px;
   }
 
   .contacts__block--email {
-    order: 1;
+    width: 240px;
+    order: -1;
     margin-right: 0;
   }
 
