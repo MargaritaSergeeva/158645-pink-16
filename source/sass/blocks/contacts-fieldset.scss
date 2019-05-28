@@ -130,6 +130,10 @@
     }
   }
 
+  .name-fieldset__label-text {
+    max-width: 100px;
+  }
+
   .contacts-fieldset__input {
     order: -1;
     margin-bottom: 10px;
@@ -140,7 +144,7 @@
 
 @media (min-width: $width-desktop) {
   .contacts-fieldset {
-    padding-bottom: 13px;
+    padding-bottom: 3px;
   }
 
   .contacts-fieldset__wrapper {
@@ -155,9 +159,9 @@
 
   .contacts-fieldset__block {
     width: 375px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 
-    &:last-child {
+    &:nth-of-type(2n) {
       margin-left: auto;
     }
   }

@@ -39,7 +39,7 @@
   margin-right: auto;
   margin-left: auto;
   padding-top: 22px;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
 }
 
 @media (max-width: $width-only-mobile) {
@@ -58,7 +58,7 @@
   .main-nav__wrapper-logo {
     width: $width-tablet;
     padding-top: 27px;
-    padding-bottom: 35px;
+    padding-bottom: 34px;
   }
 }
 
@@ -90,6 +90,10 @@
 
     .main-nav__toggle--opened {
       display: none;
+    }
+
+    .main-nav__wrapper-logo {
+      padding-bottom: 35px;
     }
 
     .main-nav__list {
