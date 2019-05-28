@@ -8,6 +8,15 @@
   display: none;
 }
 
+.slider__slide--2 {
+  display: none;
+}
+
+.slider__slide--3 {
+  display: none;
+}
+
+
 .slider__author-wrapper {
   margin-bottom: 13px;
 }
@@ -39,6 +48,14 @@
   .slider__slide {
     display: flex;
     flex-direction: column;
+  }
+
+  .slider__slide--2 {
+    display: none;
+  }
+
+  .slider__slide--3 {
+    display: none;
   }
 
   .slider__author-wrapper {
