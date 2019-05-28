@@ -114,6 +114,16 @@
   text-transform: uppercase;
 }
 
+.photo__like-text {
+  min-width: 69px;
+  max-width: 100px;
+}
+
+.photo__like-sum {
+  min-width: 21px;
+  max-width: 50px;
+}
+
 .photo__like-button {
   width: 13px;
   height: 14px;
@@ -134,8 +144,12 @@
     display: flex;
     flex-direction: column;
     width: 300px;
-    margin-right: 0;
+    margin-right: 20px;
     margin-left: 0;
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
   }
 
   .photo--panorama {
@@ -152,6 +166,10 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      align-items: center;
+      width: 620px;
+      margin-left: auto;
+      margin-right: auto;
       min-height: 10px;
       padding-right: 29px;
       padding-bottom: 24px;
@@ -171,7 +189,7 @@
     .photo__like-counter {
       justify-content: flex-end;
       min-width: 118px;
-      max-width: 130px;
+      max-width: 200px;
       margin-top: 5px;
     }
 
@@ -251,14 +269,22 @@
 }
 
 @media (min-width: $width-desktop) {
+  .photo {
+    &:nth-of-type(2n) {
+      margin-right: 20px;
+    }
+
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+
   .photo--panorama {
     min-width: 960px;
     max-width: 1200px;
 
     .photo__review-wrapper {
       width: 940px;
-      margin-right: auto;
-      margin-left: auto;
       padding-bottom: 23px;
     }
 
