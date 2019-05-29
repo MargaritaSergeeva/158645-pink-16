@@ -193,7 +193,7 @@
   }
 }
 
-@media (min-width:$width-tablet) and (max-width:$width-till-tablet) {
+@media (min-width: $width-tablet) and (max-width: $width-till-tablet) {
   .advantages__list {
     &::after {
       top: 3px;
