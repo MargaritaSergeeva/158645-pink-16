@@ -275,52 +275,55 @@
                 </label>
               </div>
               <div class="photo-form__work-block">
-                <div class="photo-form__controls-block">
-                  <div class="photo-form__control-wrapper">
-                    <label class="photo-form__icon photo-form__icon--crop photo-form__icon--active" for="crop" tabindex="0">
+                <ul class="photo-form__controls-block">
+                  <li class="photo-form__control-wrapper">
+                    <button class="photo-form__icon photo-form__icon--crop photo-form__icon--active" type="button">
                       <span class="visually-hidden">Обрезка</span>
                       <svg width="45" height="45" focusable="false" aria-hidden="true">
                         <use xlink:href="#icon-editor-crop"></use>
                       </svg>
-                    </label>
-                    <div class="photo-form__scale-wrapper photo-form__scale-wrapper--crop photo-form__scale-wrapper--active">
-                      <input class="visually-hidden" id="crop" type="range" name="crop" min="0" max="100" step="1">
+                    </button>
+                    <div class="photo-form__scale-wrapper photo-form__scale-wrapper--crop">
                       <div class="photo-form__scale-bar"></div>
                       <button class="photo-form__scale-button photo-form__scale-button--crop" type="button">
                         <span class="visually-hidden">Передвинуть бегунок</span>
                       </button>
                     </div>
-                  </div>
-                  <div class="photo-form__control-wrapper">
-                    <label class="photo-form__icon photo-form__icon--fill" for="fill" tabindex="0">
+                  </li>
+                  <li class="photo-form__control-wrapper photo-form__control-wrapper--fill">
+                    <button class="photo-form__icon photo-form__icon--fill" type="button">
                       <span class="visually-hidden">Заливка</span>
                       <svg width="48" height="48" focusable="false" aria-hidden="true">
                         <use xlink:href="#icon-editor-fill"></use>
                       </svg>
-                    </label>
+                    </button>
                     <div class="photo-form__scale-wrapper photo-form__scale-wrapper--fill">
-                      <input class="visually-hidden" id="fill" type="range" name="fill" min="0" max="100" step="1">
                       <div class="photo-form__scale-bar"></div>
                       <button class="photo-form__scale-button photo-form__scale-button--fill" type="button">
                         <span class="visually-hidden">Передвинуть бегунок</span>
                       </button>
                     </div>
-                  </div>
-                  <div class="photo-form__control-wrapper">
-                    <label class="photo-form__icon photo-form__icon--contrast" for="contrast" tabindex="0">
+                  </li>
+                  <li class="photo-form__control-wrapper">
+                    <button class="photo-form__icon photo-form__icon--contrast" type="button">
                       <span class="visually-hidden">Контраст</span>
                       <svg width="32" height="32" focusable="false" aria-hidden="true">
                         <use xlink:href="#icon-editor-contrast"></use>
                       </svg>
-                    </label>
+                    </button>
                     <div class="photo-form__scale-wrapper photo-form__scale-wrapper--contrast">
-                      <input class="visually-hidden" id="contrast" type="range" name="contrast" min="-50" max="50" step="1">
                       <div class="photo-form__scale-bar"></div>
                       <button class="photo-form__scale-button photo-form__scale-button--contrast" type="button">
                         <span class="visually-hidden">Передвинуть бегунок</span>
                       </button>
                     </div>
-                  </div>
+                  </li>
+                </ul>
+                <div class="photo-form__scale-wrapper photo-form__scale-wrapper--mobile">
+                  <div class="photo-form__scale-bar"></div>
+                  <button class="photo-form__scale-button photo-form__scale-button--mobile" type="button">
+                    <span class="visually-hidden">Передвинуть бегунок</span>
+                  </button>
                 </div>
                 <div class="photo-form__button-wrapper">
                   <button class="photo-form__button button button--pink" type="submit">
