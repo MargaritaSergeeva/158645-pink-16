@@ -88,6 +88,10 @@
 @media (min-width: $width-desktop) {
   .slider {
     @include indent;
+
+    .slider__toggle {
+      display: none;
+    }
   }
 
   .slider__carousel {
@@ -144,9 +148,5 @@
   .slider__text {
     width: 690px;
     margin-bottom: 36px;
-  }
-
-  .slider__toggle {
-    display: none;
   }
 }

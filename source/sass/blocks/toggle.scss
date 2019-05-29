@@ -1,5 +1,8 @@
 .toggle {
-  min-width: 63px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 62px;
   margin-right: auto;
   margin-left: auto;
   line-height: 0;
@@ -8,7 +11,7 @@
 .toggle__button {
   width: 6px;
   height: 6px;
-  margin-right: 13px;
+  margin-right: 17px;
   padding: 0;
 
 
